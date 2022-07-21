@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "medium-clone"
+  "cli": {
+    "analytics": "713bf513-3195-4224-9b4d-5b47a0366c14"
+  }
 }
