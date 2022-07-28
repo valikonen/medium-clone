@@ -8,6 +8,7 @@ import { environment } from 'src/environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopBarModule } from './shared/modules/top-bar/top-bar.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AppComponent } from './app.component';
     }),
     EffectsModule.forRoot([]),
     AppRoutingModule,
-    
+    TopBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

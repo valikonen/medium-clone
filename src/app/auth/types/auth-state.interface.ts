@@ -2,8 +2,9 @@ import { CurrentUserInterface } from "src/app/shared/types/current-user.interfac
 import { BackendErrorsInterface } from "./backend-errors.interface";
 
 export interface AuthStateInterface {
-    isSubmitting: boolean;
-    currentUser: CurrentUserInterface | null;
-    isLoggedIn: boolean | null;
-    validationErrors: BackendErrorsInterface | null;
-}
+    isSubmitting: boolean
+    currentUser: CurrentUserInterface | null
+    isLoggedIn: boolean | null
+    validationErrors: BackendErrorsInterface | null
+  }
+  
