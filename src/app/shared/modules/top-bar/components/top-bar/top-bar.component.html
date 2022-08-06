@@ -10,10 +10,7 @@
           </a>
         </li>
 
-       <!-- <h1>isLoggedIn: {{ isLoggedIn$ | async }}</h1>  -->
-       <h1>isAnonymous$: {{ isAnonymous$ | async | json }}</h1> 
-
-        <!-- <ng-container *ngIf="isLoggedIn$ | async"> -->
+        <ng-container *ngIf="isLoggedIn$ | async">
           <li class="nav-item">
             <a [routerLink]="['/articles/new']" class="nav-link">
               <i class="ion-compose"></i>
@@ -35,7 +32,7 @@
               &nbsp; {{ (currentUser$ | async).username }}
             </a>
           </li>
-        <!-- </ng-container> -->
+        </ng-container>
         <ng-container *ngIf="isAnonymous$ | async">
           <li class="nav-item">
             <a [routerLink]="['/login']" class="nav-link">

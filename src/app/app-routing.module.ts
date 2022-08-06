@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthModule } from '../app/auth/auth.module';
 
 const routes: Routes = [
   {
     path: '',
+    loadChildren: () => import('../app/global-feed/global-feed.module').then(m => m.GlobalFeedModule)
+  },
+  {
+    path: 'register',
     loadChildren: () => import('../app/auth/auth.module').then(m => m.AuthModule)
   }
+
 ];
 
 @NgModule({
