@@ -1,3 +1,11 @@
 <h2>Global Feed</h2>
 
-<mc-feed></mc-feed>
+<div class="home-page">
+    <mc-banner></mc-banner>
+    <mc-feed-toggler></mc-feed-toggler>
+    <mc-feed [apiUrl]="apiUrl"></mc-feed>
+
+    <div class="">
+        <mc-popular-tags></mc-popular-tags>
+    </div>
+</div>
