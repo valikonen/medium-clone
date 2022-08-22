@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('../app/your-feed/your-feed.module').then(m => m.YourFeedModule)
   },
   {
+    path: 'articles/new',
+    loadChildren: () => import('../app/create-article/create-article.module').then(m => m.CreateArticleModule)
+  },
+  {
     path: 'articles',
     loadChildren: () => import('../app/article/article.module').then(m => m.ArticleModule)
   },
